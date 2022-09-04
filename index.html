@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+  </head>
+  <body>
+    <header id="showcase">
+      <div class="container">
+        <img src="/images/bg-card-front.png" class="front" alt="front-side" />
+        <p class="j-card">0000 0000 0000 0000</p>
+        <p class="j-name">Jane Appleseed</p>
+        <p class="j-exp">00</p>
+        <p class="j-exp2">/00</p>
+
+        <img src="/images/bg-card-back.png" class="back" alt="back-side" />
+        <p class="j-cvc">000</p>
+        <p></p>
+        <img src="/images/card-logo.svg" class="logo" alt="logo" />
+      </div>
+      <div id="container-form">
+        <!-- By Default form-wrap is hidden in CSS -->
+        <div class="form-wrap">
+          <form id="form4">
+            <div class="form-group">
+              <label for="cardholder-name">CardHolder Name</label>
+              <input
+                type="text"
+                class="form3"
+                id="card-name"
+                required
+                placeholder="e.g Jane Appleased"
+              />
+            </div>
+            <div class="form-group">
+              <label for="card-number">Card Number</label>
+              <input
+                type="tel"
+                class="form3"
+                id="card-number"
+                minlength="16"
+                maxlength="28"
+                required
+                placeholder="e.g 1234 5678 9123 0000"
+              />
+            </div>
+            <div class="valid-cvc">
+              <div class="form-group">
+                <label for="exp-date">Exp.Date</label>
+                <input
+                  type="text"
+                  class="form3"
+                  id="exp-date"
+                  maxlength="2"
+                  required
+                  placeholder="MM"
+                />
+              </div>
+              <div class="form-group">
+                <label for="mm-yy">(MM/YY)</label>
+                <input
+                  type="text"
+                  class="form3"
+                  id="exp-date2"
+                  maxlength="2"
+                  required
+                  placeholder="YY"
+                />
+              </div>
+              <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input
+                  type="text"
+                  class="form3"
+                  id="cvc"
+                  minlength="3"
+                  maxlength="3"
+                  required
+                  placeholder="e.g. 123"
+                />
+              </div>
+            </div>
+            <button type="button" class="btn">Confirm</button>
+          </form>
+        </div>
+        <div class="completed">
+          <img
+            src="/images/icon-complete.svg"
+            class="img-completed"
+            alt="completed"
+          />
+          <h1 class="h-completed">Thank you!</h1>
+          <p class="p-completed">We've added your card details</p>
+          <button class="continue-btn">Continue</button>
+        </div>
+      </div>
+    </header>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">NikaA3</a>.
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  overflow: hidden;
+}
+#showcase {
+  background-color: hsl(0, 0%, 100%);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.container {
+  background: url(/images/bg-main-desktop.png) no-repeat center center/cover;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.container .front {
+  width: 370px;
+  position: absolute;
+  margin-top: 160px;
+  margin-left: 240px;
+}
+
+.container .back {
+  width: 370px;
+  position: absolute;
+  margin-top: 400px;
+  margin-left: 320px;
+}
+
+.container .logo {
+  position: absolute;
+  margin-top: 180px;
+  margin-left: 270px;
+  width: 80px;
+}
+
+.container .j-card {
+  position: absolute;
+  width: 100%;
+  letter-spacing: 4px;
+  font-size: 22px;
+  color: #fff;
+  margin-top: 275px;
+  margin-left: 270px;
+}
+
+.container .j-name {
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: 320px;
+  margin-left: 270px;
+  text-transform: uppercase;
+}
+
+.container .j-exp {
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: 320px;
+  margin-left: 530px;
+}
+
+.container .j-exp2 {
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #fff;
+  margin-top: 320px;
+  margin-left: 550px;
+}
+
+.container .j-cvc {
+  position: absolute;
+  font-size: 12px;
+  letter-spacing: 3px;
+  color: #fff;
+  margin-top: 492px;
+  margin-left: 615px;
+}
+
+#container-form {
+  margin: 130px auto;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.form-wrap {
+  background: #fff;
+  padding: 15px 25px;
+}
+
+.form-wrap .form-group {
+  margin-top: 30px;
+}
+
+.form-wrap .form-group label {
+  align-items: center;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.form-wrap .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: #ddd 1px solid;
+  border-radius: 5px;
+}
+
+#card-name,
+#card-number,
+#exp-date,
+#exp-date2,
+#cvc {
+  margin-top: 10px;
+}
+.valid-cvc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-gap: 15px;
+}
+
+.form-wrap .btn {
+  font-family: "Space Grotesk", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.form-wrap .btn:hover {
+  opacity: 0.8;
+}
+
+.completed {
+  display: none;
+  margin-top: 100px;
+  z-index: 2;
+}
+
+.completed img {
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+
+.h-completed,
+.p-completed {
+  text-align: center;
+}
+
+.h-completed {
+  padding-bottom: 15px;
+}
+.continue-btn {
+  font-family: "Space Grotesk", sans-serif;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 30px;
+  background-color: hsl(278, 68%, 11%);
+  color: #fff;
+  border-radius: 5px;
+}
+
+.continue-btn:hover {
+  opacity: 0.8;
+}
+
+.active {
+  display: block;
+  opacity: 1;
+}
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+@media (max-width: 1300px) {
+  #showcase {
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container {
+    background: url(/images/bg-main-mobile.png) no-repeat center center/cover;
+    width: 100%;
+    height: 230px;
+    position: relative;
+  }
+
+  #container-form {
+    width: 100%;
+    height: 100%;
+    margin-top: 60px;
+  }
+
+  .container .logo {
+    position: absolute;
+    width: 55px;
+    margin-top: 155px;
+    margin-left: 55px;
+    z-index: 1;
+  }
+
+  .container .front {
+    width: 340px;
+    position: absolute;
+    padding: 20px;
+    margin-top: 110px;
+    margin-left: 10px;
+    z-index: 1;
+  }
+
+  .container .back {
+    width: 340px;
+    position: absolute;
+    padding: 20px;
+    margin-top: 17px;
+    margin-left: 80px;
+  }
+
+  .container .j-card {
+    position: absolute;
+    width: 100%;
+    letter-spacing: 4px;
+    font-size: 15px;
+    color: #fff;
+    z-index: 1;
+    margin-top: 220px;
+    margin-left: 55px;
+  }
+
+  .container .j-name {
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 260px;
+    margin-left: 55px;
+    z-index: 1;
+    text-transform: uppercase;
+  }
+
+  .container .j-exp {
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 260px;
+    margin-left: 260px;
+    z-index: 1;
+  }
+
+  .container .j-exp2 {
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #fff;
+    margin-top: 260px;
+    margin-left: 280px;
+    z-index: 1;
+  }
+
+  .container .j-cvc {
+    position: absolute;
+    width: 100%;
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #fff;
+    margin-top: 110px;
+    margin-left: 330px;
+    z-index: 2;
+  }
+}
